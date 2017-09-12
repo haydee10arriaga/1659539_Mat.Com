@@ -1,6 +1,7 @@
-Python 3.6.2 (v3.6.2:5fd33b5, Jul  8 2017, 04:14:34) [MSC v.1900 32 bit (Intel)] on win32
-Type "copyright", "credits" or "license()" for more information.
->>> def orden_por_insercion(array):	
+#Haydee Judith Arriaga Ponce 
+#insercion algoritmo de ordenacion 
+cnt=0
+def orden_por_insercion(array):	
 	global cnt
 	for indice in range(1,len(array)):
 		valor=array[indice] #valor es el elemento que vamos a comparar
@@ -15,7 +16,8 @@ Type "copyright", "credits" or "license()" for more information.
 				break
 	return array
 
->>> A=[1,6,3,8,10]
->>> A
-[1, 3, 6, 8, 10]
->>> 
+print("Arreglo DESORDENADO: ")
+A=[1,6,3,8,5]
+print(A)
+print("Arreglo ORDENADO: \n", orden_por_insercion(A))
+input("Presione Enter para continuar")

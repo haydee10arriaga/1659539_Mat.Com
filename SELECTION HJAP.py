@@ -15,9 +15,8 @@ def selection(arr):
 			arr[val]=aux
 	return arr
 
->>> A=[9,6,4,2,3]
->>> A
-[9, 6, 4, 2, 3]
->>> selection(A)
-[2, 3, 4, 6, 9]
->>>
+print("Arreglo DESORDENADO: ")
+A=[9,6,4,2,3]
+print(A)
+print("Arreglo ORDENADO: \n", selection(A))
+input("Presione Enter para continuar")
